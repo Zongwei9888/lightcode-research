@@ -1,0 +1,17 @@
+{
+  "name": "lightcode-research",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Demo code for LightCode: evidence-guided self-evolving context compression for coding agents",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "bin": { "lightcode": "bin/lightcode.mjs" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "demo": "node examples/01-running-example.mjs && node examples/02-evolution-step.mjs && node examples/03-history-compaction.mjs"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}

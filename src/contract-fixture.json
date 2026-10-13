@@ -1,0 +1,18 @@
+[
+  {
+    "id": "python-multiline-string-is-not-a-comment",
+    "input": {
+      "kind": "shell",
+      "toolName": "evoagentbench",
+      "arguments": { "command": "sed -n '1,20p' module.py" },
+      "command": "sed -n '1,20p' module.py",
+      "exitCode": 0,
+      "stream": "stdout",
+      "raw": "(testbed) root@abc:/testbed# sed -n '1,20p' module.py\npayload = \"\"\"\n# REQUIRED_LITERAL_DATA: preserve this exact content because it belongs to a Python multiline string.\n# REQUIRED_LITERAL_DATA: preserve this exact content because it belongs to a Python multiline string. second\n# REQUIRED_LITERAL_DATA: preserve this exact content because it belongs to a Python multiline string. third\n# REQUIRED_LITERAL_DATA: preserve this exact content because it belongs to a Python multiline string. fourth\n\"\"\"\ndef get_payload():\n    return payload\ndef one():\n    return 1\ndef two():\n    return 2\ndef three():\n    return 3\ndef four():\n    return 4\nx = 1\ny = 2\nz = 3\nprint(payload)\n(testbed) root@abc:/testbed#\n[exit code: 0]"
+    },
+    "requiredFragments": [
+      "# REQUIRED_LITERAL_DATA: preserve this exact content because it belongs to a Python multiline string.",
+      "[exit code: 0]"
+    ]
+  }
+]

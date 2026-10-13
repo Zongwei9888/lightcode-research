@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "rules": [
+    {
+      "id": "pytest",
+      "entry": "lib/entries/pytest.js",
+      "transformation": "noise-removal"
+    },
+    {
+      "id": "grep",
+      "entry": "lib/entries/grep.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "git-diff",
+      "entry": "lib/entries/git-diff.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "tsc",
+      "entry": "lib/entries/tsc.js",
+      "transformation": "diagnostic-deduplication"
+    },
+    {
+      "id": "eslint-json",
+      "entry": "lib/entries/eslint-json.js",
+      "transformation": "lossless-formatting"
+    },
+    {
+      "id": "vite-build",
+      "entry": "lib/entries/vite-build.js",
+      "transformation": "noise-removal"
+    },
+    {
+      "id": "pnpm-install",
+      "entry": "lib/entries/pnpm-install.js",
+      "transformation": "noise-removal"
+    },
+    {
+      "id": "ruff-json",
+      "entry": "lib/entries/ruff-json.js",
+      "transformation": "lossless-formatting"
+    },
+    {
+      "id": "go-test-json",
+      "entry": "lib/entries/go-test-json.js",
+      "transformation": "lossless-formatting"
+    },
+    {
+      "id": "git-status",
+      "entry": "lib/entries/git-status.js",
+      "transformation": "noise-removal"
+    },
+    {
+      "id": "search-layout",
+      "entry": "lib/entries/search-layout.js",
+      "transformation": "lossless-formatting"
+    },
+    {
+      "id": "path-list",
+      "entry": "lib/entries/path-list.js",
+      "transformation": "lossless-formatting"
+    },
+    {
+      "id": "test-progress",
+      "entry": "lib/entries/test-progress.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "ls-listing",
+      "entry": "lib/entries/ls-listing.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "test-report",
+      "entry": "lib/entries/test-report.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "cargo-build",
+      "entry": "lib/entries/cargo-build.js",
+      "transformation": "noise-removal"
+    },
+    {
+      "id": "rtk/ansible-playbook",
+      "entry": "lib/entries/rtk-ansible-playbook.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/basedpyright",
+      "entry": "lib/entries/rtk-basedpyright.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/biome",
+      "entry": "lib/entries/rtk-biome.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/brew-install",
+      "entry": "lib/entries/rtk-brew-install.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/bundle-install",
+      "entry": "lib/entries/rtk-bundle-install.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/composer-install",
+      "entry": "lib/entries/rtk-composer-install.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/df",
+      "entry": "lib/entries/rtk-df.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/dotnet-build",
+      "entry": "lib/entries/rtk-dotnet-build.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/du",
+      "entry": "lib/entries/rtk-du.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/fail2ban-client",
+      "entry": "lib/entries/rtk-fail2ban-client.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/gcc",
+      "entry": "lib/entries/rtk-gcc.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/gcloud",
+      "entry": "lib/entries/rtk-gcloud.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/gradle",
+      "entry": "lib/entries/rtk-gradle.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/hadolint",
+      "entry": "lib/entries/rtk-hadolint.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/helm",
+      "entry": "lib/entries/rtk-helm.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/iptables",
+      "entry": "lib/entries/rtk-iptables.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/jira",
+      "entry": "lib/entries/rtk-jira.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/jj",
+      "entry": "lib/entries/rtk-jj.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/jq",
+      "entry": "lib/entries/rtk-jq.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/just",
+      "entry": "lib/entries/rtk-just.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/liquibase",
+      "entry": "lib/entries/rtk-liquibase.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/make",
+      "entry": "lib/entries/rtk-make.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/markdownlint",
+      "entry": "lib/entries/rtk-markdownlint.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/mise",
+      "entry": "lib/entries/rtk-mise.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/mix-compile",
+      "entry": "lib/entries/rtk-mix-compile.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/mix-format",
+      "entry": "lib/entries/rtk-mix-format.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/nx",
+      "entry": "lib/entries/rtk-nx.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/ollama",
+      "entry": "lib/entries/rtk-ollama.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/oxlint",
+      "entry": "lib/entries/rtk-oxlint.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/ping",
+      "entry": "lib/entries/rtk-ping.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/pio-run",
+      "entry": "lib/entries/rtk-pio-run.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/poetry-install",
+      "entry": "lib/entries/rtk-poetry-install.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/pre-commit",
+      "entry": "lib/entries/rtk-pre-commit.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/ps",
+      "entry": "lib/entries/rtk-ps.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/pulumi-destroy",
+      "entry": "lib/entries/rtk-pulumi-destroy.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/pulumi-preview",
+      "entry": "lib/entries/rtk-pulumi-preview.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/pulumi-refresh",
+      "entry": "lib/entries/rtk-pulumi-refresh.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/pulumi-stack",
+      "entry": "lib/entries/rtk-pulumi-stack.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/pulumi-up",
+      "entry": "lib/entries/rtk-pulumi-up.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/quarto-render",
+      "entry": "lib/entries/rtk-quarto-render.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/rsync",
+      "entry": "lib/entries/rtk-rsync.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/shellcheck",
+      "entry": "lib/entries/rtk-shellcheck.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/shopify-theme",
+      "entry": "lib/entries/rtk-shopify-theme.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/skopeo",
+      "entry": "lib/entries/rtk-skopeo.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/sops",
+      "entry": "lib/entries/rtk-sops.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/spring-boot",
+      "entry": "lib/entries/rtk-spring-boot.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/ssh",
+      "entry": "lib/entries/rtk-ssh.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/stat",
+      "entry": "lib/entries/rtk-stat.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/swift-build",
+      "entry": "lib/entries/rtk-swift-build.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/systemctl-status",
+      "entry": "lib/entries/rtk-systemctl-status.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/task",
+      "entry": "lib/entries/rtk-task.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/terraform-plan",
+      "entry": "lib/entries/rtk-terraform-plan.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/tofu-fmt",
+      "entry": "lib/entries/rtk-tofu-fmt.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/tofu-init",
+      "entry": "lib/entries/rtk-tofu-init.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/tofu-plan",
+      "entry": "lib/entries/rtk-tofu-plan.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/tofu-validate",
+      "entry": "lib/entries/rtk-tofu-validate.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/trunk-build",
+      "entry": "lib/entries/rtk-trunk-build.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/turbo",
+      "entry": "lib/entries/rtk-turbo.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/ty",
+      "entry": "lib/entries/rtk-ty.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/uv-sync",
+      "entry": "lib/entries/rtk-uv-sync.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/xcodebuild",
+      "entry": "lib/entries/rtk-xcodebuild.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/yadm",
+      "entry": "lib/entries/rtk-yadm.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "rtk/yamllint",
+      "entry": "lib/entries/rtk-yamllint.js",
+      "transformation": "preview"
+    },
+    {
+      "id": "native-grep",
+      "entry": "lib/entries/native-grep.js",
+      "transformation": "lossless-formatting"
+    },
+    {
+      "id": "native-glob",
+      "entry": "lib/entries/native-glob.js",
+      "transformation": "lossless-formatting"
+    }
+  ]
+}

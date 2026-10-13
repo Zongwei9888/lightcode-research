@@ -1,0 +1,369 @@
+{
+  "revision": "f7495466edf7d2ed93d6ea4d2caab18dc8806b5a",
+  "note": "Module inventory, not command count. Helper modules are included. Partial adapters do not establish RTK behavior parity.",
+  "modules": [
+    {
+      "path": "src/cmds/cloud/aws_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/cloud/container.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/cloud/curl_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/cloud/psql_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/cloud/wget_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/dotnet/binlog.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/dotnet/dotnet_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/dotnet/dotnet_format_report.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/dotnet/dotnet_trx.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/git/diff_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/git/gh_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/git/git.rs",
+      "adapters": [
+        "git-status",
+        "git-diff"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/git/glab_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/git/gt_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/go/go_cmd.rs",
+      "adapters": [
+        "go-test-json",
+        "test-report"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/go/golangci_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/js/bun_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/js/deno_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/js/lint_cmd.rs",
+      "adapters": [
+        "eslint-json"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/js/next_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/js/npm_cmd.rs",
+      "adapters": [
+        "test-progress",
+        "test-report"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/js/playwright_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/js/pnpm_cmd.rs",
+      "adapters": [
+        "pnpm-install"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/js/prettier_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/js/prisma_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/js/tsc_cmd.rs",
+      "adapters": [
+        "tsc"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/js/vitest_cmd.rs",
+      "adapters": [
+        "test-progress"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/jvm/gradlew_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/jvm/mvn_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/artisan_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/ecs_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/paratest_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/pest_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/php_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/phpstan_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/phpt_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/phpunit_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/pint_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/test_output.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/php/utils.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/python/mypy_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/python/pip_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/python/pytest_cmd.rs",
+      "adapters": [
+        "pytest"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/python/ruff_cmd.rs",
+      "adapters": [
+        "ruff-json"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/python/sqlfluff_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/python/uv_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/ruby/rake_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/ruby/rspec_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/ruby/rubocop_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/rust/cargo_cmd.rs",
+      "adapters": [
+        "cargo-build",
+        "test-report"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/rust/runner.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/scala/sbt_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/ctest_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/deps.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/env_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/find_cmd.rs",
+      "adapters": [
+        "path-list"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/system/format_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/json_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/local_llm.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/log_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/ls.rs",
+      "adapters": [
+        "ls-listing"
+      ],
+      "status": "partial-output-adapter"
+    },
+    {
+      "path": "src/cmds/system/pipe_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/read.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/search.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/summary.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/tree.rs",
+      "adapters": [],
+      "status": "not-ported"
+    },
+    {
+      "path": "src/cmds/system/wc_cmd.rs",
+      "adapters": [],
+      "status": "not-ported"
+    }
+  ]
+}
